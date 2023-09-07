@@ -1178,7 +1178,7 @@ ${Object.keys(n.meta).map(l=>{const u=n.meta[l];if(u!=0)switch(l){case"restoreHp
 func void useitpo_speed()
 {
 	Mdl_ApplyOverlayMdsTimed(self,"HUMANS_SPRINT.MDS",TIME_SPEED);
-};`:""}`}case fe.FOOD:{const s=NO(n.text,40),a=s.length==1&&s[0]==""?0:s.length;return`instance ${n.id} (C_ITEM)
+};`:""}`}case fe.FOOD:{const s=NO(n.text,40);s[s.length-1]+=` (T${n.tier})`;const a=s.length==1&&s[0]==""?0:s.length;return`instance ${n.id} (C_ITEM)
 {
 	name = "${n.name}";
 	mainflag = ITEM_KAT_${Object.keys(fe).find(l=>fe[l]===n.mainflag)};
