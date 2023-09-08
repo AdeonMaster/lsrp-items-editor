@@ -1107,10 +1107,12 @@ For more info see: https://www.ag-grid.com/javascript-grid/packages/`;return Se(
 	cond_value[2] = ${n.condValue};
 	visual = "${n.visual}";
 	description = name;
-	text[2] = NAME_DAMAGE;
-	count[2] = damagetotal;
-	text[3] = ${n.condAttr===ao.STRENGTH?"NAME_STR_NEEDED":"NAME_DEX_NEEDED"};
-	count[3] = cond_value[2];
+	text[1] = NAME_DAMAGE;
+	count[1] = damagetotal;
+	text[2] = ${n.condAttr===ao.STRENGTH?"NAME_STR_NEEDED":"NAME_DEX_NEEDED"};
+	count[2] = cond_value[2];
+	text[3] = "Длина:";
+	count[3] = ${n.range};
 	text[4] = ${n.flags&je.TWOHD_AXE||n.flags&je.TWOHD_SWD?"NAME_TWOHANDED":"NAME_ONEHANDED"};
 };`;case fe.FF:return`instance ${n.id} (C_ITEM)
 {
@@ -1126,10 +1128,10 @@ For more info see: https://www.ag-grid.com/javascript-grid/packages/`;return Se(
 	cond_value[2] = ${n.condValue};
 	visual = "${n.visual}";
 	description = name;
-	text[2] = NAME_DAMAGE;
-	count[2] = damagetotal;
-	text[3] = ${n.condAttr===ao.STRENGTH?"NAME_STR_NEEDED":"NAME_DEX_NEEDED"};
-	count[3] = cond_value[2];
+	text[1] = NAME_DAMAGE;
+	count[1] = damagetotal;
+	text[2] = ${n.condAttr===ao.STRENGTH?"NAME_STR_NEEDED":"NAME_DEX_NEEDED"};
+	count[2] = cond_value[2];
 };`;case fe.ARMOR:return`instance ${n.id} (C_ITEM)
 {
 	name = "${n.name}";
