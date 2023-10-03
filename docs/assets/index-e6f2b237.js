@@ -1131,6 +1131,7 @@ ${r.map(o=>`	${o[0]} = ${gQ(o)};`).join(`
 const string NAME_DRUNK_LEVEL = "Очки опьянения:";
 const string NAME_EFFECT_DURATION = "Продолжительность эффекта (сек):";
 const string NAME_BLADE_LENGTH = "Длина:";
+const string NAME_PROT_BLUNT = "Защита от дробящего:";
 const int STAMINA_ESSENZ = 3;
 const int STAMINA_EXTRAKT = 5;
 const int STAMINA_ELIXIER = 7;
