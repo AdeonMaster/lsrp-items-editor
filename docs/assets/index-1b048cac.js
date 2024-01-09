@@ -1349,7 +1349,7 @@ ${u.metaIsChargeable?`func void spell_cast_${u.id.toLowerCase()}(var int spellle
 `).join(`
 
 `),l=""+n.filter(({metaVisualFx:u})=>!!u).map(u=>`// ${u.id}
-`+u.metaVisualFx.replace(/#ID/g,u.id)).join(`
+`+u.metaVisualFx.replace(/#ID/g,u.id).replace(/_/g,"")).join(`
 `)+`
 
 `;return[t,e,i,r,o,a,s,l]},rte=n=>"SPELLS <- "+JSON.stringify(n.map(({id:t,manaCost:e,duration:r,hpPerCast:o,damagePerLevel:i,damageType:a})=>({id:t,manaCost:e,duration:r,hpPerCast:o,damagePerLevel:i,damageType:a})),null,2).replace(/"(.+?)": /g,"$1 = ")+`
