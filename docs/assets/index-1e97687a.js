@@ -1253,7 +1253,7 @@ instance SPELL_${c.id.replace(/_/g,"")}(C_SPELL_PROTO)
 {
 	time_per_mana = ${c.timePerMana};
 	damage_per_level = SPL_DAMAGE_${c.id};
-	damagetype = ${c.damagePerLevel};
+	damagetype = ${c.damageType};
 	spelltype = ${c.spellType};
 	canturnduringinvest = ${c.canTurnDuringInvest===!0?1:0};
 	canchangetargetduringinvest = ${c.canChangeTargetDuringInvest===!0?1:0};
